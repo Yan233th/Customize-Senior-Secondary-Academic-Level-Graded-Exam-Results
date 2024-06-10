@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>2024年上海市普通高中学业水平等级性考试成绩查询</title>
+    <link rel="stylesheet" href="/shmeea/static/assets/style.css">
+    <style type="text/css">
+        .table{margin: 0px auto;text-align: center;margin-top: 10px;}
+        .table td{padding:4px;}
+        .table thead td{ width:100px;text-align: center; font-size: 18px;}
+        .result{margin: 0px auto;}
+        .number{padding-left: 170px;}
+        .number p{margin-right: 100px; font-size: 16px;}
+        .shuoming{
+            color: #f00;
+            line-height: 26px;
+            text-align:left;
+            margin-top: 30px;
+            font-size: 14px;
+            float: left;
+            margin-top: 40px;
+        }
+        .yinzhang{
+            float: right;
+        }
+        .bt{overflow: hidden;margin-top: 20px;}
+        .fixed-window {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+        .fixed-window input {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .fixed-window button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="/shmeea/static/images/logo.jpg" alt=""></div>
+    <h2 class="title">2024年上海市普通高中学业水平等级性考试成绩查询</h2>
+
+    <div class="result" style="width:1000px;">
+        <div class="number">
+            <p id="uid">报名号：???</p> 
+            <p id="name">姓名：???</p> 
+            <p>考试时间：2024年5月</p>
+        </div>
+        <table class="table">
+            <thead>
+                <tr> 
+                    <td>地理<br>等级考等级</td>
+                    <td>历史<br>等级考等级</td>
+                    <td>物理<br>等级考等级</td>
+                    <td>化学<br>等级考等级</td>
+                    <td>生物学<br>等级考等级</td>
+                    <td>思想政治<br>等级考等级</td>
+                    <td id="subject_name">???<br>等级考等级</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td id="subject_grade">???</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="bt">
+            <div class="shuoming">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>注意事项：</td>
+                            <td style="text-align:left">1. 如网上查询结果与纸质成绩单不一致，以纸质成绩单为准。</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:left">2.“/”表示本次未报考该科目的考试，“Q”表示该科目缺考。</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+            <br><br>
+            <div class="yinzhang">
+                <img src="/shmeea/static/images/yinzhang.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Window -->
+    <div class="fixed-window">
+        <input type="text" id="input-uid" placeholder="报名号">
+        <input type="text" id="input-name" placeholder="名字">
+        <input type="text" id="input-subject" placeholder="学科名字">
+        <input type="text" id="input-grade" placeholder="学科等级">
+        <button id="update-button">修改</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
